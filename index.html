@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions</title>
+    <title>Terms and Conditions with Tabs</title>
     <style>
+        /* Basic Styling for Body */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f7fc;
             color: #333;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
         }
+
+        /* Container for Content */
         .container {
             width: 80%;
             margin: 0 auto;
@@ -22,185 +24,140 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-top: 30px;
         }
-        .logo {
-            display: block;
-            margin: 0 auto 20px;
-            max-width: 200px; /* Adjust based on your logo size */
+
+        /* Tab Navigation Styles */
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #ccc;
         }
+
+        .tabs a {
+            padding: 10px 20px;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .tabs a:hover {
+            background-color: #ecf0f1;
+        }
+
+        .tabs a.active {
+            background-color: #2980b9;
+            color: #fff;
+        }
+
+        /* Content for Each Tab */
+        .tab-content {
+            display: none;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Section and Content Styling */
         h2 {
             color: #2c3e50;
-            text-align: center;
             font-size: 2.5em;
             margin-bottom: 20px;
         }
+
         h3 {
             color: #2980b9;
             font-size: 1.8em;
             margin-top: 30px;
             margin-bottom: 15px;
         }
+
         ol {
             margin-left: 40px;
             padding-left: 0;
         }
+
         ul {
             margin-left: 20px;
             padding-left: 0;
         }
+
         li {
             margin-bottom: 15px;
-        }
-        b {
-            color: #34495e;
-        }
-        .section {
-            margin-top: 40px;
-        }
-        .note {
-            font-style: italic;
-            color: #7f8c8d;
-            margin-top: 20px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #7f8c8d;
-            padding-bottom: 20px;
-        }
-        .highlight {
-            color: #e74c3c;
-            font-weight: bold;
-        }
-        .content-list {
-            padding-left: 20px;
-            padding-top: 10px;
-        }
-        .content-list li {
-            padding: 8px 0;
-        }
-        .content-list li:hover {
-            background-color: #ecf0f1;
-        }
-
-        /* Padding for body, section, and footer */
-        body {
-            padding: 20px;
-        }
-
-        .container {
-            padding: 40px;
         }
     </style>
 </head>
 <body>
 
     <!-- Logo Section -->
-    <img src="logolatest.png" alt="Logo" class="logo">
+    <img src="logolatest.png" alt="Logo" class="logo" style="display: block; margin: 0 auto; max-width: 200px;">
 
     <div class="container">
-        <h2><b>Terms and Conditions</b></h2>
+        <!-- Tab Navigation -->
+        <div class="tabs">
+            <a href="#tab1" class="tab-link active">Terms & Conditions</a>
+            <a href="#tab2" class="tab-link">User Registration</a>
+            <a href="#tab3" class="tab-link">Content Guidelines</a>
+            <a href="#tab4" class="tab-link">Coin Rewards</a>
+        </div>
 
-        <div class="section">
+        <!-- Tab Content -->
+        <div id="tab1" class="tab-content active">
+            <h2><b>Terms and Conditions</b></h2>
+            <p>Content of the Terms and Conditions...</p>
+        </div>
+
+        <div id="tab2" class="tab-content">
             <h3><b>User Registration</b></h3>
             <ol>
-                <li>Users must sign up using Google. The following information is required during registration:
-                    <ul class="content-list">
-                        <li>Gmail ID</li>
-                        <li>Name</li>
-                        <li>Phone Number</li>
-                        <li>Profile Image</li>
-                        <li>Domain/Sector</li>
-                        <li>Designation</li>
-                    </ul>
-                </li>
-                <li>Optional data includes social media links and profile bios.</li>
+                <li>Users must sign up using Google...</li>
+                <li>Optional data includes social media links...</li>
             </ol>
         </div>
 
-        <div class="section">
+        <div id="tab3" class="tab-content">
             <h3><b>Content Upload Guidelines</b></h3>
             <ol>
-                <li><b>Prohibition of Plagiarism:</b> Only upload original work or content with proper citations.</li>
-                <li><b>No Offensive or Inappropriate Content:</b> Avoid hateful, explicit, or discriminatory materials.</li>
-                <li><b>Compliance with Laws and Policies:</b> Ensure uploaded content adheres to applicable laws and does not violate intellectual property rights.</li>
-                <li><b>Clarity and Relevance:</b> Uploads must be organized, accurate, and beneficial to the community.</li>
-                <li><b>No Malware or Harmful Links:</b> Ensure all files are free from malicious software or harmful links.</li>
+                <li>Prohibition of Plagiarism...</li>
+                <li>No Offensive or Inappropriate Content...</li>
             </ol>
         </div>
 
-        <div class="section">
-            <h3><b>Allowed Content</b></h3>
-            <ol>
-                <li>Educational materials, study guides, summaries, and reference documents related to various subjects.</li>
-                <li>Creative works, such as essays, articles, and research papers that adhere to academic standards.</li>
-                <li>Informational content that promotes learning and knowledge-sharing without infringing on copyright.</li>
-            </ol>
-        </div>
-
-        <div class="section">
+        <div id="tab4" class="tab-content">
             <h3><b>Coin Rewards and Redemption</b></h3>
             <ol>
-                <li>Users earn one coin for each PDF downloaded by others.</li>
-                <li>Redemption is allowed upon reaching a minimum of 500 coins.</li>
-                <li>At the time of redemption, users must provide their UPI ID for payment processing.</li>
-                <li>Payments are made directly to the UPI ID provided. The company is not liable for delays or errors caused by incorrect UPI ID submission.</li>
+                <li>Users earn one coin for each PDF downloaded...</li>
+                <li>Redemption is allowed upon reaching a minimum of 500 coins...</li>
             </ol>
         </div>
-
-        <div class="section">
-            <h3><b>Eligibility for Payouts</b></h3>
-            <ol>
-                <li>Users must meet the minimum redemption goal of more than 500 coins to request a payout.</li>
-                <li>The company reserves the right to investigate and withhold payouts in case of policy violations.</li>
-            </ol>
-        </div>
-
-        <div class="section">
-            <h3><b>Data Privacy and Security</b></h3>
-            <ol>
-                <li><b>Data Collection:</b> Personal information is collected during registration and app usage.</li>
-                <li><b>Data Usage:</b> The collected data will be used for service provision, communication, and payment processing.</li>
-                <li><b>User Rights:</b> Users can access, modify, or delete their personal data and withdraw consent for data processing.</li>
-                <li><b>Data Retention:</b> Personal data will be retained only as necessary or as required by law.</li>
-                <li><b>Security Measures:</b> Reasonable measures are implemented to safeguard user data, though absolute security cannot be guaranteed.</li>
-            </ol>
-        </div>
-
-        <div class="section">
-            <h3><b>Changes to Terms and Conditions</b></h3>
-            <ol>
-                <li>The company reserves the right to modify these terms at any time.</li>
-                <li>Users will be notified of significant changes, and continued use of the app implies acceptance of the updated terms.</li>
-            </ol>
-        </div>
-
-        <div class="section">
-            <h3><b>User Conduct</b></h3>
-            <ol>
-                <li>Users must adhere to community guidelines and interact respectfully.</li>
-                <li>Violations may result in content removal, suspension, or disqualification from the payout system.</li>
-                <li>Users are encouraged to report any content or behavior that violates these guidelines. The company will investigate and take appropriate action.</li>
-            </ol>
-        </div>
-
-        <div class="section">
-            <h3><b>Community Guidelines</b></h3>
-            <ol>
-                <li><b>Content Quality:</b> Upload high-quality, well-organized notes that add value to the community.</li>
-                <li><b>Prohibited Content:</b> Avoid political propaganda, hate speech, harassment, misleading information, adult or violent content.</li>
-                <li><b>Respect Intellectual Property:</b> Upload only original work or properly cited content. Plagiarism is strictly prohibited.</li>
-                <li><b>Privacy and Confidentiality:</b> Do not upload content that violates others' privacy or confidentiality.</li>
-                <li><b>Respectful Engagement:</b> Engage constructively and avoid inflammatory or disrespectful remarks.</li>
-            </ol>
-        </div>
-
-        <p class="note"><b>Violations of these guidelines may result in account suspension, content removal, or other actions deemed appropriate by the company.</b></p>
     </div>
 
     <footer>
         <p>&copy; 2024 Terms and Conditions | All Rights Reserved.</p>
     </footer>
+
+    <script>
+        // Tab navigation functionality
+        const tabLinks = document.querySelectorAll('.tab-link');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // Remove 'active' class from all tabs and content
+                tabLinks.forEach(link => link.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+
+                // Add 'active' class to the clicked tab and the corresponding content
+                const targetTab = document.querySelector(this.getAttribute('href'));
+                this.classList.add('active');
+                targetTab.classList.add('active');
+            });
+        });
+    </script>
 
 </body>
 </html>
