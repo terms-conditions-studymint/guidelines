@@ -65,6 +65,7 @@
             color: #2c3e50;
             font-size: 2.5em;
             margin-bottom: 20px;
+            text-align: center;
         }
 
         h3 {
@@ -87,12 +88,49 @@
         li {
             margin-bottom: 15px;
         }
+
+        /* Footer Style */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #ffffff;
+            border-top: 2px solid #ccc;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        /* Logo Styles */
+        .logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 200px;
+        }
+
+        /* Custom Styling for Delete Account */
+        .delete-account-steps ol {
+            margin-left: 30px;
+            padding-left: 0;
+        }
+
+        .delete-account-steps li {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .note {
+            font-size: 1.1em;
+            color: #e74c3c;
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
 
     <!-- Logo Section -->
-    <img src="logolatest.png" alt="Logo" class="logo" style="display: block; margin: 0 auto; max-width: 200px;">
+    <div class="container">
+        <img src="logolatest.png" alt="Logo" class="logo">
+    </div>
 
     <div class="container">
         <!-- Tab Navigation -->
@@ -101,12 +139,11 @@
             <a href="#tab2" class="tab-link">Delete Account</a>
         </div>
 
-        <!-- Tab Content -->
+        <!-- Tab Content for Terms & Conditions -->
         <div id="tab1" class="tab-content active">
             <h2><b>Terms and Conditions</b></h2>
             <br>
             <h3><b>User Registration</b></h3>
-            <br>
             <ol>
                 <li>Users must sign up using Google. The following information is required during registration:
                     <ul>
@@ -122,7 +159,6 @@
             </ol>
             <br>
             <h3><b>Content Upload Guidelines</b></h3>
-            <br>
             <ol>
                 <li><b>Prohibition of Plagiarism:</b> Only upload original work or content with proper citations.</li>
                 <li><b>No Offensive or Inappropriate Content:</b> Avoid hateful, explicit, or discriminatory materials.</li>
@@ -132,7 +168,6 @@
             </ol>
             <br>
             <h3><b>Allowed Content</b></h3>
-            <br>
             <ol>
                 <li>Educational materials, study guides, summaries, and reference documents related to various subjects.</li>
                 <li>Creative works, such as essays, articles, and research papers that adhere to academic standards.</li>
@@ -140,7 +175,6 @@
             </ol>
             <br>
             <h3><b>Coin Rewards and Redemption</b></h3>
-            <br>
             <ol>
                 <li>Users earn one coin for each PDF downloaded by others.</li>
                 <li>Redemption is allowed upon reaching a minimum of 500 coins.</li>
@@ -149,14 +183,12 @@
             </ol>
             <br>
             <h3><b>Eligibility for Payouts</b></h3>
-            <br>
             <ol>
                 <li>Users must meet the minimum redemption goal of more than 500 coins to request a payout.</li>
                 <li>The company reserves the right to investigate and withhold payouts in case of policy violations.</li>
             </ol>
             <br>
             <h3><b>Data Privacy and Security</b></h3>
-            <br>
             <ol>
                 <li><b>Data Collection:</b> Personal information is collected during registration and app usage.</li>
                 <li><b>Data Usage:</b> The collected data will be used for service provision, communication, and payment processing.</li>
@@ -166,14 +198,12 @@
             </ol>
             <br>
             <h3><b>Changes to Terms and Conditions</b></h3>
-            <br>
             <ol>
                 <li>The company reserves the right to modify these terms at any time.</li>
                 <li>Users will be notified of significant changes, and continued use of the app implies acceptance of the updated terms.</li>
             </ol>
             <br>
             <h3><b>User Conduct</b></h3>
-            <br>
             <ol>
                 <li>Users must adhere to community guidelines and interact respectfully.</li>
                 <li>Violations may result in content removal, suspension, or disqualification from the payout system.</li>
@@ -181,7 +211,6 @@
             </ol>
             <br>
             <h3><b>Community Guidelines</b></h3>
-            <br>
             <ol>
                 <li><b>Content Quality:</b> Upload high-quality, well-organized notes that add value to the community.</li>
                 <li><b>Prohibited Content:</b> Avoid political propaganda, hate speech, harassment, misleading information, adult or violent content.</li>
@@ -189,28 +218,32 @@
                 <li><b>Privacy and Confidentiality:</b> Do not upload content that violates others' privacy or confidentiality.</li>
                 <li><b>Respectful Engagement:</b> Engage constructively and avoid inflammatory or disrespectful remarks.</li>
             </ol>
-            <br>
-            <p><b>Violations of these guidelines may result in account suspension, content removal, or other actions deemed appropriate by the company.</b></p>
         </div>
 
         <!-- Tab Content for Delete Account -->
         <div id="tab2" class="tab-content">
             <h2><b>Delete Account</b></h2>
-            <p>If you wish to delete your account, please follow these steps:</p>
-            <ol>
-                <li>Go to the settings page.</li>
-                <li>Click on "Account Settings."</li>
-                <li>Select "Delete Account" option.</li>
-                <li>Confirm your choice by entering your account password.</li>
-                <li>Your account and all associated data will be permanently deleted.</li>
-            </ol>
-            <p>If you have any issues, contact support at support@example.com.</p>
-        </div>
-    </div>
+            <div class="delete-account-steps">
+                <h3><b>Steps for Account Deletion</b></h3>
+                <h4><b>Method 1:</b></h4>
+                <ol>
+                    <li>Log in to the app.</li>
+                    <li>Go to the Account Page.</li>
+                    <li>Below Logout, you will see an option for "Delete Account." Click on it.</li>
+                    <li>Provide confirmation for deletion of your account.</li>
+                </ol>
+                <p class="note"><b>Note:</b> Within 48 hours, your profile and all associated file uploads will be deleted.</p>
 
-    <footer>
-        <p>&copy; 2024 Terms and Conditions | All Rights Reserved.</p>
-    </footer>
+                <h4><b>Method 2:</b></h4>
+                <p>Contact us at <b>help.studymint@gmail.com</b> to request account deletion. Verification will take place through your WhatsApp number as well.</p>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2024 Terms and Conditions | All Rights Reserved.</p>
+        </footer>
+    </div>
 
     <script>
         // Tab navigation functionality
